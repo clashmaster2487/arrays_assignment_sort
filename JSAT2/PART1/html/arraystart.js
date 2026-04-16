@@ -23,3 +23,4 @@ if (index31 !== -1) {
   sortedArray.splice(index31, 1);
 }
 console.log(sortedArray);
+
