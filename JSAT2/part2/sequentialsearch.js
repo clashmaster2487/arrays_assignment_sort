@@ -9,7 +9,7 @@ const searchArray = [84,33,42,95];
 console.log(searchArray);
 
 
-// sequential search function //
+
 
 
 // the value we are searching for 
@@ -30,9 +30,16 @@ function sequentialSearch(array, value){
         if (array[i] === value){
             found = i;
             console.log(`Value found at index: ${found}`);
-            return found;
         }
     } 
-    console.log("Value not found in the array.");
-    return -1;
-};
+    return found;
+}  
+
+// function calling 
+const result = sequentialSearch(searchArray, key);
+// ouputs result 
+if (result == -1){
+    console.log(`the key of ${key} was not found in the array`)
+} else {
+    console.log(`the key of ${key} was found at index ${result}`)
+}
