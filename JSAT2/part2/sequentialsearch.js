@@ -14,11 +14,16 @@ const newArray = [84,33,42,95];
 // the value we are searching for 
 let key = 42;
 console.log (`key: ${key}`);
-// couputting the key value to the console
+// outputting  the key value to the console
 
+// parameter: array: to search and key to be found 
 // creating the search function here 
 function sequentialSearch(array, value){ 
+    // set the found value to -1 (not found)
     console.log(sequentialSearch([84,33,42,95], 42));
+    let found = -1;
+    console.log(`Array: ${newArray}`);
+    console.log(`Array: ${newArray}`);
     for(let i = 0; i < array.length; i++){
         if(array[i] === value){
             console.log("Value found at index: " + i);
