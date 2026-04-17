@@ -9,4 +9,4 @@ function sequentialSearch(array, value){
         }
     } 
        return -1
-} 
+};
