@@ -2,12 +2,14 @@
 // this file shows how linear search works 
 // Author: john safarian 
 // last modified: 17/04/2026
+// version 1.0.0
 
 // creation of the new array //
 const newArray = [84,33,42,95];
 
+
 // sequential search function //
-// first requirement is done 
+
 function sequentialSearch(array, value){ 
     console.log(sequentialSearch([84,33,42,95], 42));
     for(let i = 0; i < array.length; i++){
