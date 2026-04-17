@@ -5,7 +5,7 @@
 // version 1.0.0
 
 // creation of the new array //
-const newArray = [84,33,42,95];
+const searchArray = [84,33,42,95];
 
 
 // sequential search function //
@@ -22,8 +22,8 @@ function sequentialSearch(array, value){
     // set the found value to -1 (not found)
     console.log(sequentialSearch([84,33,42,95], 42));
     let found = -1;
-    console.log(`Array: ${newArray}`);
-    console.log(`Array: ${newArray}`);
+    console.log(`Array: ${searchArray}`);
+    console.log(`value: ${value}`);
     for(let i = 0; i < array.length; i++){
         if(array[i] === value){
             console.log("Value found at index: " + i);
