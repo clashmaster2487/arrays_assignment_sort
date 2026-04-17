@@ -12,8 +12,11 @@ const newArray = [84,33,42,95];
 // create the search function //
 
 // the value we are searching for 
+let key = 42;
+console.log (`key: ${key}`);
+// couputting the key value to the console
 
-
+// creating the search function here 
 function sequentialSearch(array, value){ 
     console.log(sequentialSearch([84,33,42,95], 42));
     for(let i = 0; i < array.length; i++){
