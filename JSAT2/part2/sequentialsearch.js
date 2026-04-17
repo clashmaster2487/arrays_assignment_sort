@@ -9,6 +9,10 @@ const newArray = [84,33,42,95];
 
 
 // sequential search function //
+// create the search function //
+
+// the value we are searching for 
+
 
 function sequentialSearch(array, value){ 
     console.log(sequentialSearch([84,33,42,95], 42));
