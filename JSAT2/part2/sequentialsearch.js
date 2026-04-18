@@ -10,7 +10,7 @@ const searchArray = [84,33,42,95];
 
 // the value we are searching for 
 let key = 99;
-
+// orginal key was 45; but for the purposes of testing i had to chnage the key to 99 to show the not found case.
 
 
 // parameter: array: to search and key to be found 
