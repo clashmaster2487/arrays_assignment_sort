@@ -1,7 +1,7 @@
-// file: sequentialSearch.js
-// this file shows how linear search works 
+// file: binarySearch.js
+// this file shows how binary search works 
 // Author: john safarian 
-// last modified: 17/04/2026
+// last modified: 18/04/2026
 // version 1.0.0
 
 // creation of the new array //
@@ -28,7 +28,7 @@ function binarySearch(array, value){
 }  
 
 // function calling 
-const result = sequentialSearch(searchArray, key);
+const result = binarySearch(searchArray, key);
 // ouputs result 
 if (result == -1){
     console.log(`the key of ${key} was not found in the array`)
