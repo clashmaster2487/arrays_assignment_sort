@@ -5,7 +5,7 @@
 // version 1.0.0
 
 // creation of the new array //
-const Array = [84,33,42,95];
+const searchArray = [84,33,42,95];
 
 
 // the value we are searching for 
