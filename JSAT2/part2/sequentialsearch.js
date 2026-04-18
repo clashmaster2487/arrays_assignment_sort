@@ -5,11 +5,11 @@
 // version 1.0.0
 
 // creation of the new array //
-const searchArray = [84,33,42,95];
+const Array = [84,33,42,95];
 
 
 // the value we are searching for 
-let key = 42;
+let key = 99;
 
 
 
@@ -19,7 +19,7 @@ function sequentialSearch(array, value){
     let found = -1;
     
     for( let i = 0; i < array.length; i++){
-        if (arraysearch[i] === value){
+        if (array[i] === value){
             found = i;
             break; // stops when found
         }
