@@ -19,10 +19,9 @@ function sequentialSearch(array, value){
     let found = -1;
     
     for( let i = 0; i < array.length; i++){
-        console.log(`arraySearch[${i}]: ${array[i]}`);
         if (arraysearch[i] === value){
             found = i;
-            break;
+            break; // stops when found
         }
     } 
     return found;
