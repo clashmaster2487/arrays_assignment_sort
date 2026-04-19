@@ -9,7 +9,7 @@ const searchArray = [55,22,11,78];
 
 
 // the value we are searching for 
-let key = 99;
+let key = 55;
 
 
 
