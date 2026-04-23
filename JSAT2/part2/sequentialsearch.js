@@ -9,13 +9,14 @@ const searchArray = [84,33,42,95];
 
 
 // the value we are searching for 
-let key = 99;
+let key = 84;
 // orginal key was 45; but for the purposes of testing i had to chnage the key to 99 to show the not found case.
 
 
 // parameter: array: to search and key to be found 
 // creating the search function here 
 function sequentialSearch(array, value){ 
+    console.log('sequential search');
     let found = -1;
     
     for( let i = 0; i < array.length; i++){
