@@ -7,7 +7,7 @@ let  myMovie = {
     
     // here we are adding the ratings //
     ratings: {
-        rating: 5,
+        rating: 4,
     }
 };
     console.log(myMovie);
