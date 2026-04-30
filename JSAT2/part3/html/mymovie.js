@@ -3,6 +3,8 @@ let  myMovie = {
     title: "The longest day ",
     year: "1964",
     summary: "The story of the D-Day landings at Normandy on June 6, 1944, told from both the Allied and German points of view.",
+     
+    
     // here we are adding the ratings //
     ratings: {
         rating: 5,
@@ -12,3 +14,5 @@ let  myMovie = {
 
 
 };
+    console.log(myMovie);
+    console.log(myMovie.ratings.rating);
