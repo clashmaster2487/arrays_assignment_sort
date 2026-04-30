@@ -13,6 +13,8 @@ let  myMovie = {
    // updating values //
    myMovie.ratings.rating = 4;
    myMovie.year = 1962;
-
+   // removal 
+    delete myMovie.summary;
+    
     console.log(myMovie);
     console.log(myMovie.ratings.rating);
