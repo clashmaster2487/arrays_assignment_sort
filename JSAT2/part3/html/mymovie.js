@@ -9,10 +9,6 @@ let  myMovie = {
     ratings: {
         rating: 5,
     }
-    
- 
-
-
 };
     console.log(myMovie);
     console.log(myMovie.ratings.rating);
