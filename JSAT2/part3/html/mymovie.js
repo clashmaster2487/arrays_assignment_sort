@@ -1,7 +1,7 @@
 // this is the object creation of  movie object creation //
 let  myMovie = {
     title: "The longest day ",
-    year: "1964",
+    year: "1962",
     summary: "The story of the D-Day landings at Normandy on June 6, 1944, told from both the Allied and German points of view.",
      
     
