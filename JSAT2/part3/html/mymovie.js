@@ -18,3 +18,4 @@ let  myMovie = {
     
     console.log(myMovie);
     console.log(myMovie.ratings.rating);
+    // end of project
