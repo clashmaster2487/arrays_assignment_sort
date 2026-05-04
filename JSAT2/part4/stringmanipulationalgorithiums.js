@@ -5,7 +5,7 @@ let anotherString = "   Another string";
 console.log(myString);
 console.log(myString.length); 
 console.log(myString.charAt(0));
-console.log(myString.charAt(10));
+console.log(myString.charAt(11)); 
 
 
 /*
