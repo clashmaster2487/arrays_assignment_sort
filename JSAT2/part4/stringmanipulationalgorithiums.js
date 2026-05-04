@@ -7,6 +7,9 @@ console.log(myString.length);
 console.log(myString.charAt(0));
 console.log(myString.charAt(11)); 
 
+// splicing //
+
+
 
 /*
 When we as humans count numbers, we start at 1.
