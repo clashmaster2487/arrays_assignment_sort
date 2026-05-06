@@ -3,13 +3,13 @@ let anotherString = "   Another string";
 //hello = "Hello there!  
 // myName = your first name 
 console.log(myString);
-console.log(myString.length); 
-console.log(myString.charAt(0));
-console.log(myString.charAt(11)); 
+//console.log(myString.length); 
+//console.log(myString.charAt(0));
+//console.log(myString.charAt(11));  
 
-// splicing //
-
-
+// slicing //
+console.log(myString.slice(5, 9,)); 
+// index 5 is i index 7 is s together forms is 
 
 /*
 When we as humans count numbers, we start at 1.
