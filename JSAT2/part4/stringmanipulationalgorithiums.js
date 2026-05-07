@@ -1,4 +1,4 @@
-let myString = "This is a string";
+ let myString = "This is a string"
 let anotherString = "   Another string";
 let hello = "Hello there!";
 let  myName = "your first name"; 
@@ -37,7 +37,11 @@ let  myName = "your first name";
 
 // trim method to remove the whitespace from another string  //
 
-console.log(anotherString.trim());
+//console.log(anotherString.trim()); //
+
+// using the replace function to change "is a" to an empty space in myString
+ let  mystring = "This is a string".replace("is a ", "")
+  console.log("my string");
 /*
 When we as humans count numbers, we start at 1.
 "This is a string"
