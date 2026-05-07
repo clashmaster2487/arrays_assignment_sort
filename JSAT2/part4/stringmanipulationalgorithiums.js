@@ -1,24 +1,39 @@
 let myString = "This is a string";
 let anotherString = "   Another string";
-//hello = "Hello there!  
+let hello = "Hello there!";
 let  myName = "your first name"; 
 //console.log(myString);
+
 //console.log(myString.length); 
+
 //console.log(myString.charAt(0));
+
 //console.log(myString.charAt(11));  
 
-// slicing // 
+// slicing //
+
 // console.log(myString.slice(5, 9,)); 
+
 // index 5 is i index 9 which gives us "is a"
 
 // substring for another string //
+
 //console.log(anotherString.substring(6,9));
+
 // index (0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15) for my own refrence just to help me out with the indexing of the string 
 
 // printing out the MyName in all uppercase letters //
+
  // console.log(myName.toUpperCase());
+
  // printing out the MyName in all lowercase letters //
-  console.log(myName.toLowerCase());
+
+ // console.log(myName.toLowerCase()); 
+// end 
+
+// concat hello and myName together // 
+  console.log(hello + myName);
+
 /*
 When we as humans count numbers, we start at 1.
 "This is a string"
