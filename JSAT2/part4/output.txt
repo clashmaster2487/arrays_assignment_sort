@@ -1,0 +1,1 @@
+hello word and hello to file writing.js 
