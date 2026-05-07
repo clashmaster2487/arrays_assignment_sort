@@ -40,8 +40,13 @@ let  myName = "your first name";
 //console.log(anotherString.trim()); //
 
 // using the replace function to change "is a" to an empty space in myString
- let  mystring = "This is a string".replace("is a ", "")
-  console.log("my string");
+
+ /*let  mystring = "This is a string".replace("is a ", "")
+  console.log("my string"); */
+
+ // Split myString on the spaces. //
+ console.log(myString.split(" "))
+
 /*
 When we as humans count numbers, we start at 1.
 "This is a string"
