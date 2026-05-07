@@ -16,7 +16,9 @@ let  myName = "your first name";
 // index (0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15) for my own refrence just to help me out with the indexing of the string 
 
 // printing out the MyName in all uppercase letters //
- console.log(myName.toUpperCase());
+ // console.log(myName.toUpperCase());
+ // printing out the MyName in all lowercase letters //
+  console.log(myName.toLowerCase());
 /*
 When we as humans count numbers, we start at 1.
 "This is a string"
