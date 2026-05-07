@@ -32,8 +32,12 @@ let  myName = "your first name";
 // end 
 
 // concat hello and myName together // 
-  console.log(hello + myName);
+ //console.log(hello + myName);
+// end 
 
+// trim method to remove the whitespace from another string  //
+
+console.log(anotherString.trim());
 /*
 When we as humans count numbers, we start at 1.
 "This is a string"
