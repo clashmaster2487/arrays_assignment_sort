@@ -45,7 +45,7 @@ let  myName = "your first name";
   console.log("my string"); */
 
  // Split myString on the spaces. //
- console.log(myString.split(" "))
+ //console.log(myString.split(" "))
 
 /*
 When we as humans count numbers, we start at 1.
