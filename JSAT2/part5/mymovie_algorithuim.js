@@ -33,14 +33,14 @@ new movie (25,"The Lord of the Rings: The Return of the King" ,2003, 20),
 new movie (26,"Forrest Gump ", 1994, 7),
 new movie (28,"Inception", 2010, 9),
 new movie (48,"The Matrix", 1999, 20), 
-new  movie (59, "The Silence of the Lambs", 1991, 15),
+new movie (59, "The Silence of the Lambs", 1991, 15),
 ];
 // movie sorted 
 movies.sort((a, b) => a.movieID - b.movieID)
 console.log(movies)
 
 // the value we are searching for 
-let key = 84;
+let key = 72;
 // orginal key was 45; but for the purposes of testing i had to chnage the key to 99 to show the not found case.
 
 
