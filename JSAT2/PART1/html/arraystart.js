@@ -39,8 +39,9 @@ function sequentialSearch(array, value){
 }  
 
 
+
 // function calling 
-const result = sequentialSearch(searchArray, key);
+let result = sequentialSearch(Newarray, key);
 // ouputs result 
 if (result == -1){
     console.log(`the key of ${key} was not found in the array`)
