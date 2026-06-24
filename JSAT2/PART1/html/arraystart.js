@@ -8,6 +8,7 @@ Newarray.sort((a, b) => a - b);
 
 // inserting the numbers 19, 23, 30 into the sorted array //
 Newarray.push(19, 23, 30);
+Newarray.sort((a, b) => a - b);
 console.log(Newarray);
 
 // remove two numbers 8,31 from the array //
@@ -21,6 +22,7 @@ const index31 = Newarray.indexOf(31);
 if (index31 !== -1) {
   Newarray.splice(index31, 1);
 }
+Newarray.sort((a, b) => a - b);
 console.log(Newarray);
 
 // parameter: array: to search and key to be found 
@@ -38,7 +40,8 @@ function sequentialSearch(array, value){
     return found;
 }  
 
-
+// key 
+let key = 65;
 
 // function calling 
 let result = sequentialSearch(Newarray, key);
