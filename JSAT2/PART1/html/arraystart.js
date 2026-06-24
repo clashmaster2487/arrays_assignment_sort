@@ -44,7 +44,7 @@ function sequentialSearch(array, value){
 let key = 65;
 
 // function calling 
-let result = sequentialSearch(Newarray, key);
+const result = sequentialSearch(Newarray, key);
 // ouputs result 
 if (result == -1){
     console.log(`the key of ${key} was not found in the array`)
@@ -52,3 +52,26 @@ if (result == -1){
     console.log(`the key of ${key} was found at index ${result}`)
 }
 
+// parameter: array: to search and key to be found 
+// creating the search function here 
+function binarySearch(array, value){ 
+    let found = -1;
+    
+    for( let i = 0; i < array.length; i++){
+        if (array[i] === value){
+            found = i;
+            break; // stops when found
+        }
+    } 
+    return found;
+}  
+
+
+// function calling 
+const result2 = binarySearch(Newarray, key);
+// ouputs result 
+if (result == -1){
+    console.log(`the key of ${key} was not found in the array`)
+} else {
+    console.log(`the key of ${key} was found at index ${result}`)
+}
