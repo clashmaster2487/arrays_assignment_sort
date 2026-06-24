@@ -14,7 +14,7 @@ console.log(Newarray);
 // number 8 here//
 const index8 = Newarray.indexOf(8);
 if (index8 !== -1) {
-  sortedArray.splice(index8, 1);
+  Newarray.splice(index8, 1);
 }
 // number 31 here// 
 const index31 = Newarray.indexOf(31);
