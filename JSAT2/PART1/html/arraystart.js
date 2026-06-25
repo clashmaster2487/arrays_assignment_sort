@@ -41,13 +41,13 @@ function sequentialSearch(array, value){
 }  
 
 // key 
-let key = 65;
+let value = 65;
 
 // function calling 
-const result = sequentialSearch(Newarray, key);
+const result = sequentialSearch(Newarray, value);
 // ouputs result 
 if (result == -1){
-    console.log(`the key of ${key} was not found in the array`)
+    console.log(`-1`)
 } else {
     console.log(`the key of ${key} was found at index ${result}`)
 }
@@ -68,7 +68,7 @@ function binarySearch(array, value){
 
 
 // function calling 
-const result2 = binarySearch(Newarray, key);
+const result2 = binarySearch(array, value);
 // ouputs result 
 if (result == -1){
     console.log(`the key of ${key} was not found in the array`)
