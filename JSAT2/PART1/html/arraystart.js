@@ -1,29 +1,29 @@
 // creation of array and printing it to console // 
-let  Newarray = [11, 5, 8, 3, 25, 16, 31, 45,14, 20]
-console.log(Newarray);
+let  array = [11, 5, 8, 3, 25, 16, 31, 45,14, 20]
+console.log(array);
 
 
 // sorting the array in ascending order (smallest to largest and printing it to console) //
-Newarray.sort((a, b) => a - b);
+array.sort((a, b) => a - b);
 
 // inserting the numbers 19, 23, 30 into the sorted array //
-Newarray.push(19, 23, 30);
-Newarray.sort((a, b) => a - b);
-console.log(Newarray);
+array.push(19, 23, 30);
+array.sort((a, b) => a - b);
+console.log(array);
 
 // remove two numbers 8,31 from the array //
 // number 8 here//
-const index8 = Newarray.indexOf(8);
+const index8 = array.indexOf(8);
 if (index8 !== -1) {
-  Newarray.splice(index8, 1);
+  array.splice(index8, 1);
 }
 // number 31 here// 
-const index31 = Newarray.indexOf(31);
+const index31 = array.indexOf(31);
 if (index31 !== -1) {
-  Newarray.splice(index31, 1);
+    array.splice(index31, 1);
 }
-Newarray.sort((a, b) => a - b);
-console.log(Newarray);
+array.sort((a, b) => a - b);
+console.log(array);
 
 // parameter: array: to search and key to be found 
 // creating the search function here 
@@ -33,7 +33,7 @@ function sequentialSearch(array, value){
     
     for( let i = 0; i < array.length; i++){
         if (array[i] === value){
-            found = i;
+            found = [i];
             break; // stops when found
         }
     } 
@@ -44,7 +44,7 @@ function sequentialSearch(array, value){
 let value = 65;
 
 // function calling 
-const result = sequentialSearch(Newarray, value);
+const result = sequentialSearch(array, value);
 // ouputs result 
 if (result == -1){
     console.log(`-1`)
@@ -59,8 +59,7 @@ function binarySearch(array, value){
     
     for( let i = 0; i < array.length; i++){
         if (array[i] === value){
-            found = i;
-            break; // stops when found
+            found = [i];
         }
     } 
     return found;
