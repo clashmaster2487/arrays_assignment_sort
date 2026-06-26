@@ -16,7 +16,7 @@ console.log(array);
 const index8 = array.indexOf(8);
 if (index8 !== -1) {
   array.splice(index8, 1);
-}
+} 
 // number 31 here// 
 const index31 = array.indexOf(31);
 if (index31 !== -1) {
@@ -34,7 +34,6 @@ function sequentialSearch(array, value){
     for( let i = 0; i < array.length; i++){
         if (array[i] === value){
             found = [i];
-            break; // stops when found
         }
     } 
     return found;
@@ -42,15 +41,6 @@ function sequentialSearch(array, value){
 
 // key 
 let value = 65;
-
-// function calling 
-const result = sequentialSearch(array, value);
-// ouputs result 
-if (result == -1){
-    console.log(`-1`)
-} else {
-    console.log(`the key of ${key} was found at index ${result}`)
-}
 
 // parameter: array: to search and key to be found 
 // creating the search function here 
@@ -66,11 +56,3 @@ function binarySearch(array, value){
 }  
 
 
-// function calling 
-const result2 = binarySearch(array, value);
-// ouputs result 
-if (result == -1){
-    console.log(`the key of ${key} was not found in the array`)
-} else {
-    console.log(`the key of ${key} was found at index ${result}`)
-}
