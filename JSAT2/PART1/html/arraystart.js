@@ -13,15 +13,15 @@ console.log(array);
 
 // remove two numbers 8,31 from the array //
 // number 8 here//
-const index8 = array.indexOf(8);
-if (index8 !== -1) {
+//const index8 = array.indexOf(8);
+/*if (index8 !== -1) {
   array.splice(index8, 1);
-} 
+} */
 // number 31 here// 
-const index31 = array.indexOf(31);
-if (index31 !== -1) {
+//const index31 = array.indexOf(31); //
+/*if (index31 !== -1) {
     array.splice(index31, 1);
-}
+}  */
 array.sort((a, b) => a - b);
 console.log(array);
 
