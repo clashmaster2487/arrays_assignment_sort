@@ -34,8 +34,7 @@ function sequentialSearch(array, value){  // taking the array and value here
     
     for( let i = 0; i < array.length; i++){
         if (array[i] === value){
-            found = i;
-            break; // stops when found
+            found = [i];
         }
     } 
     return found;
@@ -44,15 +43,6 @@ function sequentialSearch(array, value){  // taking the array and value here
 // key 
 let value = 5;
 
-// function calling 
-const result = sequentialSearch(Newarray, value);
-// ouputs result 
-if (result == -1){
-    console.log(`-1`)
-} else {
-    console.log(`the target value of {index} is found `)
-}
-
 // parameter: array: to search and key to be found 
 // creating the search function here 
 function binarySearch(array, value){ 
@@ -60,8 +50,7 @@ function binarySearch(array, value){
     
     for( let i = 0; i < array.length; i++){
         if (array[i] === value){
-            found = i;
-            break; // stops when found
+            found = [i];
         }
     } 
     return found;
