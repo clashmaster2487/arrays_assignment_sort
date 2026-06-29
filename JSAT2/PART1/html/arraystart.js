@@ -26,6 +26,11 @@ if (index31 !== -1) {
 Newarray.sort((a, b) => a - b); // sorting it again keeping the array in asending order
 console.log(Newarray); 
 
+
+
+// key 
+let value = 11;
+
 // parameter: array: to search and key to be found 
 // creating the search function here 
 function sequentialSearch(array, value){  // taking the array and value here
@@ -44,13 +49,10 @@ function sequentialSearch(array, value){  // taking the array and value here
 const result = sequentialSearch(Newarray, value);
 // ouputs result 
 if (result == -1){
-    console.log(`null`)
+    console.log(`the value ${value} was not found. the the function returned -1`) // returns if the number doenst exist 
 } else {
-    console.log(`"Found:", result`)
+    console.log(`The value ${value} was found at index ${result}.`) // returns the numebr if it does exist
 }
-
-// key 
-let value = 11;
 
 // parameter: array: to search and key to be found 
 // creating the search function here 
@@ -67,10 +69,10 @@ function binarySearch(array, value){
 
 
 // function calling 
-const result = binarySearch(Newarray, value);
+const binarySearchresult= binarySearch(Newarray, value);
 // ouputs result 
 if (result == -1){
-    console.log(`null`)
+    console.log(`the value ${value} was not found. the the function returned -1`)
 } else {
-    console.log(`"Found:", result`)
+    console.log(`The value ${value} was found at index ${result}.`)
 }
