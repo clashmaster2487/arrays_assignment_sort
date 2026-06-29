@@ -26,6 +26,8 @@ if (index31 !== -1) {
 Newarray.sort((a, b) => a - b); // sorting it again keeping the array in asending order
 console.log(Newarray); 
 
+
+
 // parameter: array: to search and key to be found 
 // creating the search function here 
 function sequentialSearch(array, value){  // taking the array and value here
@@ -57,11 +59,3 @@ function binarySearch(array, value){
 }  
 
 
-// function calling 
-const result2 = binarySearch(Newarray, value);
-// ouputs result 
-if (result == -1){
-    console.log(``)
-} else {
-    console.log(``)
-}
