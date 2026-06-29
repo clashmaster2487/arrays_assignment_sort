@@ -61,7 +61,7 @@ function binarySearch(array, value){
 const result = binarySearch(Newarray, value);
 // ouputs result 
 if (result == -1){
-    console.log(`found:`)
-} else {
     console.log(`null`)
+} else {
+    console.log(`Found:", result`)
 }
