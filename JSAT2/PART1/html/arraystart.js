@@ -40,6 +40,15 @@ function sequentialSearch(array, value){  // taking the array and value here
     return found;
 }  
 
+// function calling 
+const result = sequentialSearch(Newarray, value);
+// ouputs result 
+if (result == -1){
+    console.log(`null`)
+} else {
+    console.log(`"Found:", result`)
+}
+
 // key 
 let value = 11;
 
