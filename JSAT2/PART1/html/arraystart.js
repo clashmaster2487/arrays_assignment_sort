@@ -41,7 +41,7 @@ function sequentialSearch(array, value){  // taking the array and value here
 }  
 
 // key 
-let value = 5;
+let value = 11;
 
 // parameter: array: to search and key to be found 
 // creating the search function here 
@@ -58,10 +58,10 @@ function binarySearch(array, value){
 
 
 // function calling 
-const result2 = binarySearch(Newarray, value);
+const result = binarySearch(Newarray, value);
 // ouputs result 
 if (result == -1){
-    console.log(``)
+    console.log(`the number  in the array was found`)
 } else {
-    console.log(``)
+    console.log(`null`)
 }
