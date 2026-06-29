@@ -1,14 +1,14 @@
 let myString = "This is a string"
 let anotherString = "   Another string";
 let hello = "Hello there!";
-let  myName = "your first name"; 
-console.log(myString);
+let  myName = "John";
+console.log("this is a string");
 
-console.log(myString.length); 
+//console.log(myString.length); 
 
 console.log(myString.charAt(0));
 
-console.log(myString.charAt(11));  
+ console.log(myString.charAt(10));  
 
 // slicing //
 
@@ -25,27 +25,37 @@ console.log(anotherString.substring(6,9));
 // printing out the MyName in all uppercase letters //
 
   console.log(myName.toUpperCase());
-
  // printing out the MyName in all lowercase letters //
 
-  console.log(myName.toLowerCase()); 
+  console.log(myName.toLowerCase());
 // end 
 
 // concat hello and myName together // 
  console.log(hello + myName);
 // end 
 
+// another string 
+
+console.log(anotherString)
+
+// hello there  
+
+console.log(Hellothere)
+
+
+
+
 // trim method to remove the whitespace from another string  //
 
-console.log(anotherString.trim()); //
+//console.log(anotherString.trim()); //
 
 // using the replace function to change "is a" to an empty space in myString
 
- let  mystring = "This is a string".replace("is a ", "")
-  console.log("my string"); 
+// let  mystring = "This is a string".replace("is a ", "")
+  console.log(mystring); 
 
  // Split myString on the spaces. //
- console.log(myString.split(" "))
+// console.log(myString.split(" "))
 
 /*
 When we as humans count numbers, we start at 1.
