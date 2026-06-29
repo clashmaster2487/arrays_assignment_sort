@@ -40,33 +40,34 @@ movies.sort((a, b) => a.movieID - b.movieID)
 console.log(movies)
 
 // the value we are searching for 
-let key = 72;
+let value  = 48;
 // orginal key was 45; but for the purposes of testing i had to chnage the key to 99 to show the not found case.
 
 
 // parameter: array: to search and key to be found 
 // creating the search function here 
-function sequentialSearch(movies, key){ 
+function sequentialSearch(movies, value){ 
     console.log('sequential search');
     let found = null;
     
     for( let i = 0; i < movies.length; i++){
-        if (movies[i].movieID === key){
-            found = i;
+        if (movies[i].movieID === value){
+            found = movies[i];
             break; // stops when found
         }
     } 
     return found;
 }  
 
-// function calling 
-const result = sequentialSearch(movies, key);
-// ouputs result 
-if (result == null){
-    console.log(`the key of ${key} was not found in the array`)
+const result = sequentialSearch(movies, value);
+
+if (result === null){
+    console.log("null");
 } else {
-    console.log(`the key of ${key} was found at index ${result}`)
+    console.log("Found:", result);
 }
+
+
 /* moakcarro data 
 *The Shawshank Redemption, The Godfather, The Dark Knight, Pulp Fiction, Schindler's List, The Lord of the Rings: The Return of the King, Forrest Gump, Inception, The Matrix, The Silence of the Lambs the ratings and years where made by my as i couldnt get mockarro to do that
 *
