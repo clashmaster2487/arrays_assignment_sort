@@ -39,10 +39,10 @@ console.log(movies)
 
 // the value we are searching for 
 let value  = 48;
-// orginal key was 45; but for the purposes of testing i had to chnage the key to 99 to show the not found case.
+// orginal value was 45; but for the purposes of testing i had to chnage the key to 99 to show the not found case.
 
 
-// parameter: array: to search and key to be found 
+// parameter: array: to search and value  to be found 
 // creating the search function here 
 function sequentialSearch(movies, value){ 
     console.log('sequential search');
