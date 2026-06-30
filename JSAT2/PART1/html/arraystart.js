@@ -5,6 +5,8 @@ console.log(Newarray); // console logging new araay for debugging
 
 // sorting the array in ascending order (smallest to largest and printing it to console) //
 Newarray.sort((a, b) => a - b); // intial sorting 
+console.log(Newarray);
+
 
 // inserting the numbers 19, 23, 30 into the sorted array //
 Newarray.push(19, 23, 30); // here we are pushing the new numbers into the sorted array 
