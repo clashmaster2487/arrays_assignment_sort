@@ -44,8 +44,14 @@ function sequentialSearch(array, value){  // taking the array and value here
     return found;
 }  
 
-// key 
-let value = 5;
+// function calling 
+const result = sequentialSearch(Newarray, value);
+// ouputs result 
+if (result == -1){
+    console.log(`the value ${value} was not found. the the function returned -1`) // returns if the number doenst exist 
+} else {
+    console.log(`The value ${value} was found at index ${result}.`) // returns the numebr if it does exist
+}
 
 // parameter: array: to search and key to be found 
 // creating the search function here 
