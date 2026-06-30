@@ -13,7 +13,7 @@ let  myMovie = {
   myMovie.year = 1962;
 
   // 4. deleting 
-delete myMovie.summary;
+  delete myMovie.summary 
 
  // console logging 
     console.log(myMovie);
