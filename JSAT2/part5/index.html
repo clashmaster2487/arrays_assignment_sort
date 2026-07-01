@@ -23,6 +23,7 @@
                     <button type="button" name="btn-search" onclick="searchClick()">Search</button>
                     <button type="button" name="btn-a2z" onclick="a2zClick()">Sort (A-Z)</button>
                     <button type="button" name="btn-z2a" onclick="z2aClick()">Sort (Z-A)</button>
+                    <button type="button" name="btn-1-9" onclick="movielist.sortbyRatingAsc()">sortbyRatingAsc</button>
                 </div>
             </form>
         </section>
@@ -51,6 +52,9 @@
             <button class="tablinks active" onclick="openForm(event, 'Add')" id="defaultOpen">Add a new movie</button>
             <button class="tablinks" onclick="openForm(event, 'Update')">Update a movie</button>
             <button class="tablinks" onclick="openForm(event, 'Delete')">Delete a movie</button>
+            <button class="tablinks" onclick="openForm(event, 'Search')">Search by ID</button>
+            <button class="tablinks" onclick="openForm(event, 'Rating')">Rating</button>
+            <button class="tablinks" onclick="openForm(event, 'bestmovie')">Best Movie</button>
         </section>
         <!-- End tab section -->
 
@@ -71,7 +75,29 @@
                 <button type="button" name="submit" onclick="addClick()">Add Movie</button>
             </form>
         </section>
-        <!-- End of add movie form -->
+        <!------rating section-->
+        <section id="Rating" class="tabcontent">
+            <h2>Movie Ratings</h2>
+            <form id="form-rating">
+                <div class="mb-3">
+                    <label for="rating">Rating: </label>
+                    <input type="text" name="rating" id="ratingID" placeholder="rating...">
+                </div>
+                <div class="mb-3">
+                </div>
+        </section>
+        <!-- best movie section -->
+        <section id="bestmovie" class="tabcontent">
+            <h2>Best Movie</h2>
+            <form id="form-best-movie">
+                <div class="mb-3">
+                <button type="button"  onclick="bestMovieClick()">Best Movie
+                    show best movies 
+                </button>
+
+                <div class="mb-3">
+                </div>
+        </section>
         <!-- Update movie form -->
         <section id="Update" class="tabcontent"> 
             <h2>Update a Movie</h2>
@@ -92,6 +118,19 @@
             </form>
         </section>
         <!-- End of update movie form -->
+
+        <section id="Search" class="tabcontent"> 
+            <h2>Search by ID</h2>
+            <form id="form-search">
+                <div class="mb-3">
+                    <label for="searchID">Movie ID: </label>
+                    <input type="text" name="movieID" id="searchID" placeholder="Movie ID...">
+                </div>
+                <button type="button" name="submit" onclick="SearchIDClick()">searchByID</button>
+            </form>
+           </section>
+
+        
         <!-- Delete movie form -->
         <section id="Delete" class="tabcontent"> 
             <h2>Delete a Movie</h2>
