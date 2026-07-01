@@ -16,12 +16,12 @@
  */
 
 let initialMovies = [
-    {title: "The Shawshank Redeption", year: 1994},
-    {title: "The Godfather", year: 1972},
-    {title: "The Godfather: Part II", year: 1974},
-    {title: "The Dark Knight", year: 2008},
-    {title: "Krull", year: 1983},
-    {title: "The Last Starfighter", year: 1981},
+    { id: 1,title: "The Shawshank Redeption", year: 1994, rating: 5},
+    { id: 2,title: "The Godfather", year: 1972, rating: 7},
+    { id: 4,title: "The Godfather: Part II", year: 1974, rating: 8},
+    { id: 5,title: "The Dark Knight", year: 2008, rating: 9},
+    { id: 6,title: "Krull", year: 1983, rating: 10},
+    { id: 7,title: "The Last Starfighter", year: 1981, rating: 11},
 ]
 
 
@@ -61,6 +61,16 @@ function z2aClick(){
     movielist.sortZ2A();
 }
 
+function bestMovieClick(){
+     movielist.sortZ2A();
+}
+
+function SearchIDClick(){
+    const id = document.getElementById("searchID").value;
+    const movie = movielist.searchByID(Number(id));
+    console.log(movie);
+}
+
 // Add
 /**
  * Add a new movie to the list - (Create)
@@ -77,10 +87,13 @@ function addClick(){
     let title = formElements["title"].value;
     // Get the year from the form
     let year = Number(formElements["year"].value);
+    // ratings
+    let ratings = Number(formElements["Ratings"].value);
     // Validation.
     // Test the year and the title.
     console.log(title);
     console.log(year);
+    console.log(rating);
     // Reg Ex pattern
     const pattern = /^[a-z0-9\s]*$/i
     // Test of Reg Ex pattern with input
