@@ -15,6 +15,7 @@
  * @property {string} rootId - The id of the HTML element where the list is to be displayed.
  * @property {Array} movieList - The array of movies
  * @property {function} refreash - This method removes all current elements and display the current list
+ * @property {function} searchID - This method will search the movieList for a movie based on the index and display it in the UI
  */
 
 class MovieList{
@@ -22,6 +23,7 @@ class MovieList{
         this.rootId = rootId;
         this.movieList = movies;
         this.refresh();
+        
     }
 
     // Methods
@@ -33,8 +35,9 @@ class MovieList{
      * @function movieRow
      * @param { string}  title - the title of the movie
      * @param {string} year - the year of the movie
+     * @param {number} rating - the rating of the movie
     */
-    movieRow(title, year){
+    movieRow(title, year,rating){
         console.log('Movie Row')
         // get the rootElement
         const rootElement = document.getElementById(this.rootId);
@@ -42,7 +45,7 @@ class MovieList{
         const row = document.createElement('li');
         // Add the class and our text to the new element
         row.classList.add('row');
-        row.textContent = `${title} (${year})`;
+        row.textContent = `${title} (${year}) (${rating})`;
         // add the new element to the DOM
         rootElement.appendChild(row);
     }
@@ -56,7 +59,7 @@ class MovieList{
 
             let movie = this.movieList[i];
             console.log(movie);
-            this.movieRow(movie.title, movie.year);
+            this.movieRow(movie.title, movie.year, movie.rating);
         }
     }
 
@@ -73,9 +76,11 @@ class MovieList{
         for(let i = 0; i < list.length; i++){
             let movie = list[i];
             // Call the movieRow function to generate a row
-            this.movieRow(movie.title, movie.year);
+            this.movieRow(movie.title, movie.year, movie.rating);
         }
     }
+     
+   
 
     // removeElements
     /**
@@ -115,7 +120,11 @@ class MovieList{
         return row;
     }
 
-    // refresh
+    searchByID(id){
+        return this.movieList.find((movie) => movie.id === id);
+    }
+
+    // refresh  
     refresh(){
         // We need to remove all elements
         this.removeElements();
@@ -131,9 +140,9 @@ class MovieList{
      * @param {number} year - The year the movie was made
      */
 
-    add(title, year){
+    add(title, year, rating){
         // Add a new movie to the end of the list.
-        this.movieList.push({ title: title, year: year });
+        this.movieList.push({ title: title, year: year, id: Date.now(), rating: rating });
         // (ES6 JS) We can write this another way.
         // this.movieList.push({ title, year});
         // refresh
@@ -185,6 +194,13 @@ class MovieList{
         this.refresh();
     }
 
+    sortbyRatingAsc(){
+        this.movieList.sort(function (a,b){
+            return a.rating - b.rating;
+        });
+        this.refresh();
+    }
+
     // search
     /**
      * Search the movieList titles for a partial match based on a search string
@@ -192,6 +208,8 @@ class MovieList{
      * @param {string} nameString - The partial title we are searching for.
      */
     search(nameString){
+        console.log("SEARCH FUNCTION CALLED");
+    console.log("value:", nameString);
         // Create a new list to hold search results.
         let shortList = [];
         // Use a loop to check to see if the nameStrig is in a movie title
@@ -200,9 +218,11 @@ class MovieList{
             if(movie.title.includes(nameString)){
                 // If the nameString is in movie.title, add this to our shortList
                 shortList.push(movie);
+                console.log(nameString);
             }
         }
-        // Generate / display the search list
+        // Generate / display the search lisst
         this.genMovieSearchList(shortList);
+        
     }
 }
