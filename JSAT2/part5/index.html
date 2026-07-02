@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Main content for our page -->
+     <main class="container">
+        <!-- h1 - page heading -->
+        <h1> &#127916; My Movie App &#127909; </h1>
+        <!-- Section search / sort -->
+        <section class="search-sort">
+            <!-- search / sort heading -->
+            <h2> Movie Search / Sort</h2>
+            <form id="form-list-control">
+                <div class="mb-3">
+                    <input type="text" name="search-string" placeholder="Movie name...">
+                </div>
+                <div class="mb-3">
+                    <button type="button" name="btn-search" onclick="searchClick()">Search</button>
+                    <button type="button" name="btn-a2z" onclick="a2zClick()">Sort (A-Z)</button>
+                    <button type="button" name="btn-z2a" onclick="z2aClick()">Sort (Z-A)</button>
+                    <button type="button" name="btn-1-9" onclick="movielist.sortbyRatingAsc()">sortbyRatingAsc</button>
+                </div>
+            </form>
+        </section>
+        <!-- End of Search / sort section -->
+        <!-- start of movie list section -->
+        <section id="mList">
+            <!-- movie list section heading-->
+            <h2 class="ml-3">Movie List</h2>
+            <!-- movie list start -->
+            <ol class="list" id="list">
+                <li class="row"> The Shawshank Redeption (1994)</li>
+                <li class="row"> The Godfather (1972)</li>
+                <li class="row"> The Godfather: Part II (1974)</li>
+                <li class="row"> The Dark Knight (2008)</li>
+                <li class="row"> 12 Angry Men (1957)</li>
+                <li class="row"> Schindler's List (1993)</li>
+                <li class="row"> The Lord of the Rings: The return of the King (2004)</li>
+                <li class="row"> Pulp Fiction (1994) </li>
+            </ol>
+            <!-- End of movie list -->
+        </section>
+        <!-- End of movie section -->
+        <!-- Start tab section -->
+        <!-- tabs section -->
+        <section class="tab">
+            <button class="tablinks active" onclick="openForm(event, 'Add')" id="defaultOpen">Add a new movie</button>
+            <button class="tablinks" onclick="openForm(event, 'Update')">Update a movie</button>
+            <button class="tablinks" onclick="openForm(event, 'Delete')">Delete a movie</button>
+            <button class="tablinks" onclick="openForm(event, 'Search')">Search by ID</button>
+            <button class="tablinks" onclick="openForm(event, 'Rating')">Rating</button>
+            <button class="tablinks" onclick="openForm(event, 'bestmovie')">Best Movie</button>
+            <button class="tablinks" onclick="openForm(event, 'refresh-Button')">refresh</button>
+        </section>
+        <!-- End tab section -->
+
+        <!-- The tab content -->
+        <!-- Contain add movie form / update movie form / delete movie form -->
+        <!-- add movie form -->
+        <section id="Add" class="tabcontent"> 
+            <h2>Add a Movie</h2>
+            <form id="form-add">
+                <div class="mb-3">
+                    <label for="addTitle">Title: </label>
+                    <input type="text" name="title" id="addTitle" placeholder="Title...">
+                </div>
+                <div class="mb-3">
+                    <label for="addYear">Year: </label>
+                    <input type="text" name="year" id="addYear" placeholder="Year...">
+                </div>
+
+                <div>
+                 <label for="addrating">Rating:</label>
+                 <input type="text" name="rating" id="addRating" placeholder rating...">
+                </div>
+                <button type="button" name="submit" onclick="addClick()">Add Movie</button> 
+            </form>
+        </section>
+        <!------rating section-->
+        <section id="Ratings" class="tabcontent">
+            <h2>Movie Ratings</h2>
+            <form id="form-rating">
+                <div class="mb-3">
+                    <label for="Rating">Rating: </label>
+                    <input type="text" name="rating" id="ratingID" placeholder="rating...">
+                </div>
+                <div class="mb-3">
+                </div>
+            </form>
+        </section>
+        <!-- best movie section -->
+        <section id="bestmovie" class="tabcontent">
+            <h2>Best Movie</h2>
+
+            <form id="form-best-movie">
+                <div class="mb-3">
+                <button type="button"  onclick="bestMovieClick()">
+                    Best Movie
+                   
+                </button>
+
+                <div class="mb-3">
+                </div>
+        </section>
+
+        <section id="refresh-Button" class="tabcontent">
+            <h2>Best Movie</h2>
+            <form id="form-refresh-btn">
+                <div class="mb-3">
+                <button type ="Button"  onclick="movielist.refresh()">
+                    refresh 
+                </button>
+
+                <div class="mb-3">
+                </div>
+        </section>
+
+
+            
+
+
+
+
+        </section>
+        
+
+        
+        <!-- Update movie form -->
+        <section id="Update" class="tabcontent"> 
+            <h2>Update a Movie</h2>
+            <form id="form-update">
+                <div class="mb-3">
+                    <label for="upIndex">Index: </label>
+                    <input type="text" name="index" id="upIndex" placeholder="Index..." onchange="onUpIndexChange()">
+                </div>
+                <div class="mb-3">
+                    <label for="upTitle">Title: </label>
+                    <input type="text" name="title" id="upTitle" placeholder="Title...">
+                </div>
+                <div class="mb-3">
+                    <label for="upYear">Year: </label>
+                    <input type="text" name="year" id="upYear" placeholder="Year...">
+                </div>
+                <button type="button" name="submit" onclick="updateClick()">Update Movie</button>
+            </form>
+        </section>
+        <!-- End of update movie form -->
+
+        <section id="Search" class="tabcontent"> 
+            <h2>Search by ID</h2>
+            <form id="form-search">
+                <div class="mb-3">
+                    <label form="searchID">Movie ID: </label>
+                    <input type="text" name="movieID" id="searchID" placeholder="Movie ID...">
+                </div>
+                <button type="button" name="submit" onclick="SearchIDClick()">searchByID</button>
+            </form>
+                
+           </section>
+
+        
+        <!-- Delete movie form -->
+        <section id="Delete" class="tabcontent"> 
+            <h2>Delete a Movie</h2>
+            <form id="form-delete">
+                <div class="mb-3">
+                    <label for="delIndex">Index: </label>
+                    <input type="text" name="title" id="delIndex" placeholder="Index...">
+                </div>
+                <button type="button" name="submit" onclick="deleteClick()">Delete a Movie</button>
+            </form>
+        </section>
+        <!-- End Delete form -->
+        <!-- End of tab content -->
+
+        <!-- Footer -->
+        <footer>
+            <div>
+                <p>Copyright &copy; <span id="date"></span> My Movie App</p>
+            </div>
+        </footer>
+     </main>
+
+    <!-- Load in our JS scripts -->
+    <!-- Note: The order of the imports here is important -->
+    <!-- Having the movie-list.js firest allows the app.js access to the MovieList class -->
+    <script src="./movie-List.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
