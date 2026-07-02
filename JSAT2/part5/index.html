@@ -55,6 +55,7 @@
             <button class="tablinks" onclick="openForm(event, 'Search')">Search by ID</button>
             <button class="tablinks" onclick="openForm(event, 'Rating')">Rating</button>
             <button class="tablinks" onclick="openForm(event, 'bestmovie')">Best Movie</button>
+            <button class="tablinks" onclick="openForm(event, 'refresh-Button')">refresh</button>
         </section>
         <!-- End tab section -->
 
@@ -72,7 +73,12 @@
                     <label for="addYear">Year: </label>
                     <input type="text" name="year" id="addYear" placeholder="Year...">
                 </div>
-                <button type="button" name="submit" onclick="addClick()">Add Movie</button>
+
+                <div>
+                 <label for="addrating">Rating:</label>
+                 <input type="text" name="rating" id="addRating" placeholder rating...">
+                </div>
+                <button type="button" name="submit" onclick="addClick()">Add Movie</button> 
             </form>
         </section>
         <!------rating section-->
@@ -85,19 +91,45 @@
                 </div>
                 <div class="mb-3">
                 </div>
+            </form>
         </section>
         <!-- best movie section -->
         <section id="bestmovie" class="tabcontent">
             <h2>Best Movie</h2>
+
             <form id="form-best-movie">
                 <div class="mb-3">
-                <button type="button"  onclick="bestMovieClick()">Best Movie
-                    show best movies 
+                <button type="button"  onclick="bestMovieClick()">
+                    Best Movie
+                   
                 </button>
 
                 <div class="mb-3">
                 </div>
         </section>
+
+        <section id="refresh-Button" class="tabcontent">
+            <h2>Best Movie</h2>
+            <form id="form-refresh-btn">
+                <div class="mb-3">
+                <button type ="Button"  onclick="movielist.refresh()">
+                    refresh 
+                </button>
+
+                <div class="mb-3">
+                </div>
+        </section>
+
+
+            
+
+
+
+
+        </section>
+        
+
+        
         <!-- Update movie form -->
         <section id="Update" class="tabcontent"> 
             <h2>Update a Movie</h2>

@@ -88,7 +88,7 @@ function addClick(){
     // Get the year from the form
     let year = Number(formElements["year"].value);
     // ratings
-    let ratings = Number(formElements["Ratings"].value);
+    let rating = Number(formElements["rating"].value);
     // Validation.
     // Test the year and the title.
     console.log(title);
@@ -104,7 +104,7 @@ function addClick(){
     console.log(yearIsInt);
     if (test && yearIsInt){
         // Save the new movie to the list
-        movielist.add(title, Number(year));
+        movielist.add(title, Number(year),rating);
         // Clear the input fields
         formElements.title.value = "";
         formElements.year.value = "";
@@ -168,6 +168,7 @@ function onUpIndexChange(){
 function updateClick(){
     // get all form elements from the DOM
     let formElements = document.getElementById("form-update").elements;
+    if(!form) return;
     // get the values from the input boxes
     let index = formElements["index"].value -1;
     let title = formElements["title"].value;

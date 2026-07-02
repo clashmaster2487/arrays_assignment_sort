@@ -162,6 +162,7 @@ class MovieList{
         // update the year
         this.movieList[index].year = year;
         // refresh the list
+        this.movieList[index].rating = rating;
         this.refresh();
     }
 
