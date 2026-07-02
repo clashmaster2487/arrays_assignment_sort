@@ -88,12 +88,12 @@ function addClick(){
     // Get the year from the form
     let year = Number(formElements["year"].value);
     // ratings
-    let ratings = Number(formElements["Ratings"].value);
+    let ratings = Number(document.getElementById("ratingID").value);
     // Validation.
     // Test the year and the title.
     console.log(title);
     console.log(year);
-    console.log(rating);
+    console.log(ratingID);
     // Reg Ex pattern
     const pattern = /^[a-z0-9\s]*$/i
     // Test of Reg Ex pattern with input
@@ -166,20 +166,25 @@ function onUpIndexChange(){
  * @property {number} year - the year the movie was made
  */
 function updateClick(){
+    console.log("updateClick");
     // get all form elements from the DOM
-    let formElements = document.getElementById("form-update").elements;
+    let formElements = document.getElementById("form-update")
     // get the values from the input boxes
-    let index = formElements["index"].value -1;
-    let title = formElements["title"].value;
-    let year = formElements["year"].value;
+    let index = Number(document.getElementById("upIndex").value) - 1;
+    let title = document.getElementById("upTitle").value;
+    let year = document.getElementById("upYear").value;
     // validation
     // Test the inputs for valid values.
     // Update the movie in the movielist
     movielist.update(Number(index), title, Number(year));
     // Clear the input fields
-    formElements.index.value = "";
-    formElements.title.value = "";
-    formElements.year.value = "";
+    document.getElementById("upIndex").value = "";
+    document.getElementById("upTitle").value = "";
+    document.getElementById("upYear").value = "";
+    console.log("INDEX:", index);
+    console.log("TITLE:", title);
+    console.log("YEAR:", year);
+    console.log("MOVIELIST:", movielist);
 
 }
 

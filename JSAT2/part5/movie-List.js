@@ -157,12 +157,15 @@ class MovieList{
      * @param {number} year - the new movie year
      */
     update(index, title, year){
+        console.log("UPDATE FUNCTION CALLED");
+        if(!this.movieList[index]) return;
         // Update the title
         this.movieList[index].title = title;
         // update the year
         this.movieList[index].year = year;
         // refresh the list
         this.refresh();
+        console.log("this.movielist")
     }
 
     // delete
